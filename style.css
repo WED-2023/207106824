@@ -1,7 +1,180 @@
-#menu
-{
-	position: fixed;
-	width: 100%;
-	height: 35px;
-	background: white;
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+body {
+  font-family: 'Varela Round', sans-serif;
 }
+
+/* --- תפריט עליון --- */
+#menu {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 50px;
+	background-color: #d990ef;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 1000;
+	box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+	background: linear-gradient(to right, #e81f9e, #ed9fd5);
+
+  }
+  
+  /* הקישורים שבתפריט */
+  #menu ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	gap: 20px;
+  }
+  
+  #menu li {
+	display: inline;
+  }
+  
+  #menu a {
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 16px;
+	padding: 10px;
+  }
+  
+  #menu a:hover {
+	text-decoration: underline;
+  }
+  
+  /* רווח מתחת לתפריט (כדי שלא יכסה תוכן) */
+  body {
+	padding-top: 60px;
+	font-family: 'Varela Round', sans-serif;
+	margin: 0;
+	direction: rtl; /* אם האתר בעברית */
+  }
+  
+  /* --- סקשנים כלליים --- */
+  .section {
+	padding: 40px 30px;
+	background-color: #ffffff;
+	border-radius: 20px;
+	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+	border: 2px solid #ffc1e3; /* מסגרת ורודה עדינה */
+	max-width: 1000px;
+	margin: 40px auto;
+  }
+  
+  
+  .section h2 {
+	text-align: center;
+	border-bottom: 3px solid #ff008c;
+	padding-bottom: 10px;
+	margin-bottom: 20px;
+  }
+  
+  /* --- גלריית תמונות --- */
+  .photo-gallery {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 30px;
+	margin-top: 30px;
+  }
+  
+  .photo-gallery figure {
+	text-align: center;
+	direction: rtl;
+	margin: 0;
+	max-width: 250px;
+  }
+  
+  .photo-gallery img {
+	width: 100%;
+	height: auto;
+	border-radius: 12px;
+	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+	transition: transform 0.3s ease;
+	object-fit: cover; /* גוזר את התמונה בלי לעוות */
+  }
+  
+  .photo-gallery img:hover {
+	transform: scale(1.05);
+  }
+  
+  .photo-gallery figcaption {
+	margin-top: 10px;
+	font-size: 16px;
+	color: #333;
+  }
+  .contact-form {
+	max-width: 500px;
+	margin: 30px auto;
+	background: linear-gradient(to bottom right, #fdfbfb, #ebedee);
+	padding: 30px;
+	border-radius: 20px;
+	box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+	direction: rtl;
+	font-family: 'Varela Round', sans-serif;
+  }
+  
+  .contact-form label {
+	display: block;
+	margin-bottom: 5px;
+	font-weight: bold;
+	font-size: 16px;
+	color: #333;
+  }
+  
+  .contact-form input,
+  .contact-form textarea,
+  .contact-form select {
+	width: 100%;
+	padding: 12px;
+	margin-bottom: 20px;
+	border: 1px solid #ccc;
+	border-radius: 10px;
+	font-size: 16px;
+	box-sizing: border-box;
+	background-color: #fff;
+  }
+  
+  .contact-form input:focus,
+  .contact-form textarea:focus,
+  .contact-form select:focus {
+	border-color: #ff65b2;
+	outline: none;
+	box-shadow: 0 0 5px rgba(255, 101, 178, 0.3);
+  }
+  
+  .send-button {
+	background-color: #ff65b2;
+	color: white;
+	padding: 12px 30px;
+	font-size: 18px;
+	border: none;
+	border-radius: 25px;
+	cursor: pointer;
+	transition: background-color 0.3s;
+	display: block;
+	margin: 0 auto;
+  }
+  
+  .send-button:hover {
+	background-color: #e63392;
+  }
+  
+  
+  
+  .playlist-container {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+	justify-content: center;
+	margin-top: 30px; /* או כמה שאת רוצה */
+}
+.fb-like {
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+  }
+  
